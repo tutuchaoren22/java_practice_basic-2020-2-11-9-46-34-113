@@ -12,8 +12,7 @@ public class App {
         List<Card> cards = getAllCards(pattern, figure);
         CardMachine cardMachine = new CardMachine();
         System.out.println("已知牌的总数为" + cards.size() + "，请输入随机抽取牌的个数：");
-        int n = new Scanner(System.in).nextInt();
-        cardMachine.drawCard(cards, n);
+        cardMachine.drawCard(cards, new Scanner(System.in).nextInt());
     }
 
     public static List<Card> getAllCards(List<String> pattern, List<String> figure) {
