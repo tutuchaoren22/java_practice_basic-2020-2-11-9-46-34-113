@@ -12,14 +12,6 @@ public class Card {
         this.figure = figure;
     }
 
-    public String getFigure() {
-        return figure;
-    }
-
-    public String getPattern() {
-        return pattern;
-    }
-
     public String showCard() {
         return this.pattern + this.figure;
     }
