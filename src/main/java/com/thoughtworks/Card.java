@@ -1,18 +1,18 @@
 package com.thoughtworks;
 
 public class Card {
-    private String pattern;
-    private String figure;
+    private Pattern pattern;
+    private Figure figure;
 
     public Card() {
     }
 
-    public Card(String pattern, String figure) {
+    public Card(Pattern pattern, Figure figure) {
         this.pattern = pattern;
         this.figure = figure;
     }
 
     public String showCard() {
-        return this.pattern + this.figure;
+        return this.pattern.getPattern() + this.figure.getFigure();
     }
 }
